@@ -1,0 +1,294 @@
+@import 'bootstrap';
+@import './style.css';
+
+@import './dark_light_mode.css';
+
+
+:root{
+    --pri: #10485C;
+    --sec: #101019;
+    --ter: rgb(26, 33, 36);
+    --acc: rgb(223, 222, 222);
+
+    --pri2: #EAEBEC;
+    --sec2: #A9AEB2;
+    --ter2: #302C26;
+    --acc2: #DEDFE0;
+}
+
+
+body{
+    /* font-family: 'Fenix', serif; */
+    font-family: 'Lustria', serif;
+    background-color: var(--acc);
+    color: var(--ter);
+}
+
+
+body.light{
+    /* font-family: 'Fenix', serif; */
+    font-family: 'Lustria', serif;
+    background-color: var(--acc) !important;
+    color: var(--sec) !important;
+}
+
+.text-w{
+    color: var(--acc) !important;
+    text-shadow: 4px 3px 3px var(--sec);
+}
+
+h1, h2, h3 {
+    font-family: 'Fenix', serif;
+}
+
+.navCust{
+    backdrop-filter: blur(3px);
+}
+
+.navbarScroll{
+    background-color: var(--ter);
+}
+
+
+.nav-link, .navbar-brand{
+    color: var(--acc) !important;
+}
+
+.nav-link:hover{
+    scale: 1.1;
+    transition: 0.4s;
+}
+
+.navbar-toggler {
+    background-color: white;
+    color: var(--sec2); 
+}
+
+.btnDark{
+    background-color: var(--ter);
+}
+
+.btn-custom{
+    background-color: var(--ter);
+    color: var(--acc);
+}
+
+.btn-custom:hover{
+    background-color: var(--acc);
+    color: var(--ter) !important;
+    transition: 0.4s;
+}
+
+.btn-custom2{
+    background-color: var(--acc);
+    color: var(--ter);
+    text-shadow: 1px 1px 1px var(--ter);
+}
+
+.btn-custom2:hover{
+    background-color: var(--ter);
+    color: var(--acc) !important;
+    text-shadow: 1px 1px 1px var(--acc);
+    transition: 0.4s;
+}
+
+#logout{
+    color: var(--sec) !important;
+}
+
+
+.h-img{
+    height: 75vh;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 45%;
+}
+
+/* Fine Welcome.blade.php */
+.article{
+    height: 40vh;
+}
+
+.h-careers{
+    background: linear-gradient(0deg, transparent, rgba(26, 33, 36,0.7)), url(../images/light_mode/register_light.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.h-header{
+    height: 100vh;
+}
+
+.h-header2{
+    height: 70vh;
+}
+
+.h-index{
+    background: linear-gradient(0deg, transparent, rgba(26, 33, 36,0.7)), url(../images/dark_mode/economia_dark.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.h-category{
+    background: linear-gradient(0deg, transparent, rgba(26, 33, 36,0.7)), url(../images/dark_mode/politica_dark.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.h-writer{
+    background: linear-gradient(0deg, transparent, rgba(26, 33, 36,0.3)), url(../images/dark_mode/redattore.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.h-search{
+    background: linear-gradient(0deg, transparent, rgba(26, 33, 36,0.3)), url(../images/dark_mode/register_dark.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.h-dasboard-r{
+    background: linear-gradient(0deg, transparent, rgba(26, 33, 36,0.3)), url(../images/light_mode/office.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.h-dashboard-a{
+    background: linear-gradient(0deg, transparent, rgba(26, 33, 36,0.3)), url(../images/light_mode/tech_light.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.text-show1{
+    position: absolute;
+    top: 10%;
+}
+
+.text-show2{
+    position: absolute;
+    top: 30%;
+}
+
+.text-show3{
+    position: absolute;
+    bottom: 5%;
+}
+
+.titolo{
+    animation-name: title;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.cardCust{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: 0px;
+    /* height: 510px; */
+}
+
+
+
+.cardImgCust{
+    border-radius: 15px 15px 1px 1px;
+    cursor: pointer;
+    height: 230px;
+}
+.pCard{
+    font-size: 14px;
+}
+.writerLink{
+    color: rgb(149, 151, 149);
+}
+.writerLink:hover{
+    color: var(--pri);
+    transition: 0.5s;
+}
+
+.aLogin{
+    color: rgb(174, 176, 174);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.aLogin:hover{
+    font-size: 120%;
+    color: var(--pri);
+
+    transition: 0.5s;
+}
+.loginNote{
+    font-size: 13px;
+}
+
+.login{
+    background: url(../images/dark_mode/login_dark.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.login_light{
+    background: url(../images/dark_mode/login_light.jpg) !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.register{
+    background: url(../images/dark_mode/meteo_dark.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.form{
+    background: url(../images/form.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+.bg-form{
+    background-color: rgba(223, 222, 222,0.2);
+    backdrop-filter: blur(12px);
+}
+
+.footer{
+    background-color: var(--ter);
+}
+
+
+@keyframes title{
+    from{
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@media screen and ( max-width: 670px) {
+    .h-img{
+        height: 50vh;
+    }
+
+    .carousel-caption{
+        position: absolute;
+        top: 25%;
+    }
+    
+    .article{
+        height: 80vh;
+    }
+
+    th {
+        font-size: 12px;
+    }
+
+    td {
+        font-size: 12px;
+        
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+    
+}
